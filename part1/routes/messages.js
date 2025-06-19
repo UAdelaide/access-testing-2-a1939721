@@ -29,12 +29,12 @@ router.get('messages', async (req, res) => {
 });
 
 router.post('/messages', async (req,res) => {
-    const { bookID, message } = req.body;
+    const { bookID, MESSAGE } = req.body;
     await db.query(`
         INSERT INTO Messages (BuyerID, SellerID, BookID, MESSAGE, SentAt)
         VALUES(?,?,?,?, NOW())
-        `, [CURRENT_BUYER_ID, CURRENT_SELLER_ID, bookID, message]);
-        res.status(201).json({message: 'Message sent!'});
+        `, [CURRENT_BUYER_ID, CURRENT_SELLER_ID, bookID, MESSAGE]);
+        res.status(201).json({MESSAGE: 'Message sent!'});
 });
 
 module.exports = router;
