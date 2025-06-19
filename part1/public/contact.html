@@ -60,7 +60,9 @@
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ bookID: this.selectedBookID, message: this.messageText })
-                    })
+                    });
+                    aleart('Message sent!');
+                    this.messageText = '';
                 }
             }
         })
