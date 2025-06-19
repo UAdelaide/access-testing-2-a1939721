@@ -10,6 +10,10 @@ CREATE TABLE Locations (
 )
 
 CREATE TABLE Users (
-    
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR (100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Loca
 
 )
