@@ -56,7 +56,11 @@
                     if(!this.selectedBookID || !this.messageText.trim()){
                         return alert('Please select a book and enter a message.');
                     }
-                    await fetch('/api/messages',)
+                    await fetch('/api/messages',{
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        
+                    })
                 }
             }
         })
