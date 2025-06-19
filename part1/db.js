@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 
-const db = mysql.createPool({
+const pool = mysql.createPool({
     socketPath: '/var/run/mysqld/mysqld.sock',
     host: '127.0.0.1',
     user: 'root',
@@ -10,4 +10,4 @@ const db = mysql.createPool({
 
 const db = mysql.createPool.promise();
 
-module.exports = pool;
+module.exports = db;
