@@ -15,6 +15,8 @@ router.get('/items', async (req,res) => {
         res.json(rows);
 });
 
+router.get('messages')
+
 router.post('/messages', async (req,res) => {
     const { bookID, message } = req.body;
     await db.query(`
