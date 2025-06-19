@@ -34,7 +34,15 @@
     </div>
 
     <script>
-        const{ createApp }
+        const{ createApp } = Vue;
+        createApp({
+            data(){
+                return {
+                    items: [],
+                    selectedBookID: ''
+                }
+            }
+        })
 
 </body>
 </html>
