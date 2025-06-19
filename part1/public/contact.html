@@ -50,6 +50,9 @@
 
                 const messagesRes = await fetch('/api/messages');
                 this.messages = await messagesRes.json();
+            },
+            methods: {
+                async sendMessage()
             }
         })
 
