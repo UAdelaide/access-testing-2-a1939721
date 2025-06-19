@@ -17,3 +17,12 @@ CREATE TABLE Users (
     LocationID INT NOT NULL,
     FOREIGN KEY (LocationID) REFERENCES Locations(LocationID)
 );
+
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR (100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    LocationID INT NOT NULL,
+    FOREIGN KEY (LocationID) REFERENCES Locations(LocationID)
+);
