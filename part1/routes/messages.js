@@ -7,5 +7,6 @@ var CURRENT_SEOLLER_ID = 2;
 
 router.get('/items', async (req,res)=>{
     const[rows] = await db.query('
-        ')
+        SELECT bl.
+        ');
 });
