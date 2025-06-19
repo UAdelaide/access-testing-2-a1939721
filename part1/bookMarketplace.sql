@@ -46,4 +46,5 @@ CREATE TABLE Purchases (
 );
 
 
-INSERT INTO Users ()
+INSERT INTO Users (Name, Email, Password, LocationID)
+VALUES ('Alice Johnson')
