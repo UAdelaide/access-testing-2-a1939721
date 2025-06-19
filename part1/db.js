@@ -3,7 +3,7 @@ const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'GamePlatform'
+    database: 'bookMarketplace'
 });
 
 module.exports = pool.promise();
