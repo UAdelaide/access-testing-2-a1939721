@@ -20,7 +20,10 @@ router.get('messages', async (req, res) => {
         SELECT m.MessageText, m.SentAt, bi.Title, u.Name AS BuyerName
         FROM Messages m
         JOIN BookListings bl ON m.BookID = bl.BookID
-        JOIN BookInfo bi ON bl.BookInfoI`)
+        JOIN BookInfo bi ON bl.BookInfoID = bi.BookInfoID
+        JOIN Users u ON m.BuyerID = u.UserID
+        WHERE m.SellerID = ?
+        ORDER BY m.SentAt Desc`)
 })
 
 router.post('/messages', async (req,res) => {
