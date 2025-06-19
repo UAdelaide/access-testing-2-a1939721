@@ -18,7 +18,7 @@ router.get('/items', async (req,res) => {
 router.get('/messages', async (req, res) => {
     const [rows] = await db.query(`
         SELECT m.MESSAGE, m.SentAt, bi.Title, u.Name AS BuyerName
-        FROM Messages m
+        FROM messages m
         JOIN BookListings bl ON m.BookID = bl.BookID
         JOIN BookInfo bi ON bl.BookInfoID = bi.BookInfoID
         JOIN Users u ON m.BuyerID = u.UserID
@@ -31,7 +31,7 @@ router.get('/messages', async (req, res) => {
 router.post('/messages', async (req,res) => {
     const { bookID, MESSAGE } = req.body;
     await db.query(`
-        INSERT INTO Messages (BuyerID, SellerID, BookID, MESSAGE, SentAt)
+        INSERT INTO messages (BuyerID, SellerID, BookID, MESSAGE, SentAt)
         VALUES(?,?,?,?, NOW())
         `, [CURRENT_BUYER_ID, CURRENT_SELLER_ID, bookID, MESSAGE]);
         res.status(201).json({MESSAGE: 'Message sent!'});
