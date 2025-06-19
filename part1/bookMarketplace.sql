@@ -1,11 +1,11 @@
 
---
+--Create database--
 DROP DATABASE IF EXISTS BookMarketplace;
 CREATE DATABASE BookMarketplace;
 USE BookMarketplace;
 
 
-
+--Create tables--
 CREATE TABLE Locations (
     LocationID INT AUTO_INCREMENT PRIMARY KEY,
     City VARCHAR (100) NOT NULL,
@@ -49,6 +49,6 @@ CREATE TABLE Purchases (
     FOREIGN Key (BookID) REFERENCES BookListings(BookID)
 );
 
-
+--Create database--
 INSERT INTO Users (Name, Email, Password, LocationID)
 VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
