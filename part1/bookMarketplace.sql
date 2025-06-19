@@ -33,5 +33,5 @@ CREATE TABLE BookListings (
     Condition VARCHAR(50) NOT NULL,
     ListingDate DATE NOT NULL,
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
-    FOREIGN Key (SellerID) REFERENCES 
+    FOREIGN Key (SellerID) REFERENCES Users(UserID)
 );
