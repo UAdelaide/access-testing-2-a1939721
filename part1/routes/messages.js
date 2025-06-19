@@ -33,7 +33,7 @@ router.post('/messages', async (req,res) => {
     await db.query(`
         INSERT INTO messages (BuyerID, SellerID, BookID, MESSAGE, SentAt)
         VALUES(?,?,?,?, NOW())
-        `, [CURRENT_BUYER_ID, CURRENT_SELLER_ID, bookID, message]);
+        `, [CURRENT_BUYER_ID, sellerID, bookID, message]);
         res.status(201).json({MESSAGE: 'Message sent!'});
 });
 
