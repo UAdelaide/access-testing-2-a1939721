@@ -40,9 +40,7 @@ CREATE TABLE Purchases (
     PurcaseID INT AUTO_INCREMENT PRIMARY KEY,
     BuyerID INT NOT NULL,
     BookID INT NOT NULL,
-    Price DECIMAL(8,2),
-    BookCondition VARCHAR (50) NOT NULL,
-    ListingDate DATE NOT NULL,
-    FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
+    PurchaseDate DATE NOT NULL,
+    FOREIGN KEY (BuyerID) REFERENCES Users(BookInfoID),
     FOREIGN Key (SellerID) REFERENCES Users(UserID)
 );
