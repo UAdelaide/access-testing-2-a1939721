@@ -29,5 +29,6 @@ CREATE TABLE BookListings (
     BookID INT AUTO_INCREMENT PRIMARY KEY,
     BookInfoID INT NOT NULL,
     SellerID INT NOT NULL,
-    Price DECIMAL  VARCHAR (20) NOT NULL
+    Price DECIMAL(8,2),
+    Condition VARCHAR(50)
 );
