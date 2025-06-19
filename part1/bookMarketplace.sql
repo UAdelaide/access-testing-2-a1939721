@@ -59,5 +59,5 @@ VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
 INSERT INTO BookInfo (Title, Author, ISBN)
 VALUES ('Introduction to Algorithms', 'Thomas H. Cormen', '19780262033848');
 
-INSERT INTO Locations (City, State, Country)
+INSERT INTO BookListings (BookInfoID, SellerID, Price, Con)
 VALUES ('Adelaide', 'SA', 'Australia');
