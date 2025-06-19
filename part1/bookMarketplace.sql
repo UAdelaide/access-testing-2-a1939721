@@ -35,3 +35,14 @@ CREATE TABLE BookListings (
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
     FOREIGN Key (SellerID) REFERENCES Users(UserID)
 );
+
+CREATE TABLE BookListings (
+    BookID INT AUTO_INCREMENT PRIMARY KEY,
+    BookInfoID INT NOT NULL,
+    SellerID INT NOT NULL,
+    Price DECIMAL(8,2),
+    BookCondition VARCHAR (50) NOT NULL,
+    ListingDate DATE NOT NULL,
+    FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
+    FOREIGN Key (SellerID) REFERENCES Users(UserID)
+);
