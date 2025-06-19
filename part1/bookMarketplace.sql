@@ -8,4 +8,4 @@ CREATE TABLE User (
     email VARCHAR (100) NOT NULL UNIQUE,
     pw password VARCHAR (100 NOT NULL UNIQUE,
     location
-)
+);
