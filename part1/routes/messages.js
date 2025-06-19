@@ -3,7 +3,6 @@ var router = express.Router();
 var db = require('../db');
 
 var CURRENT_BUYER_ID = 1;
-var CURRENT_SELLER_ID = 2;
 
 router.get('/items', async (req,res) => {
     const[rows] = await db.query(`
@@ -24,7 +23,7 @@ router.get('/messages', async (req, res) => {
         JOIN Users u ON m.BuyerID = u.UserID
         WHERE m.SellerID = ?
         ORDER BY m.SentAt Desc
-        `, [CURRENT_SELLER_ID]);
+        `, [CURRENT_BUYER_ID]);
         res.json(rows);
 });
 
