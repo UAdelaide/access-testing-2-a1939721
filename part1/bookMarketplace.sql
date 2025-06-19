@@ -32,5 +32,6 @@ CREATE TABLE BookListings (
     Price DECIMAL(8,2),
     Condition VARCHAR(50) NOT NULL,
     ListingDate DATE NOT NULL,
-    FOREIGN KEY (BookInfoID)
+    FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
+    FOREIGN Key (SellerID) REFERENCES 
 );
