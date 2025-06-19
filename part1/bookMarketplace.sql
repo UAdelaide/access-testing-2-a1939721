@@ -51,7 +51,7 @@ CREATE TABLE Purchases (
 
 --Insert values--
 
-INSERT INTO Users (Name, Email, Password, LocationID)
+INSERT INTO Locations (City, Email, Password, LocationID)
 VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
 
 INSERT INTO Users (Name, Email, Password, LocationID)
