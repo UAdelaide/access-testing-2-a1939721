@@ -8,3 +8,7 @@ CREATE TABLE Locations (
     State VARCHAR (100) NOT NULL,
     Country VARCHAR (100) NOT NULL
 );
+
+CREATE TABLE Users (
+    
+)
