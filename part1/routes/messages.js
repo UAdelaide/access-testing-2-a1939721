@@ -15,6 +15,6 @@ router.get('/items', async (req,res) => {
         res.json(rows);
 });
 
-router.
+router.post('/messages', async (req,res)=>{});
 
 module.exports = router;
