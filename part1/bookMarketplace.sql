@@ -15,6 +15,5 @@ CREATE TABLE Users (
     Email VARCHAR(100) NOT NULL,
     Password VARCHAR(255) NOT NULL,
     LocationID INT NOT NULL,
-    FOREIGN KEY (LocationID) REFERENCE Locations(LocationID)
-
-)
+    FOREIGN KEY (LocationID) REFERENCES Locations(LocationID)
+);
