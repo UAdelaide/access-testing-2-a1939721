@@ -41,6 +41,6 @@ CREATE TABLE Purchases (
     BuyerID INT NOT NULL,
     BookID INT NOT NULL,
     PurchaseDate DATE NOT NULL,
-    FOREIGN KEY (BuyerID) REFERENCES Users(BookInfoID),
-    FOREIGN Key (SellerID) REFERENCES Users(UserID)
+    FOREIGN KEY (BuyerID) REFERENCES Users(UserID),
+    FOREIGN Key (BookID) REFERENCES BookInfo(BookID)
 );
