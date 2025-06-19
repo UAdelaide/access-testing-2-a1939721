@@ -36,7 +36,7 @@ CREATE TABLE BookListings (
     FOREIGN Key (SellerID) REFERENCES Users(UserID)
 );
 
-CREATE TABLE BookListings (
+CREATE TABLE Purchases (
     BookID INT AUTO_INCREMENT PRIMARY KEY,
     BookInfoID INT NOT NULL,
     SellerID INT NOT NULL,
