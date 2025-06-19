@@ -20,7 +20,7 @@ router.post('/messages', async (req,res)=>{
     await db.query{`
         INSERT INTO Messages (BuyerID, SellerID, BookID, MessageText, SentAt)
         VALUES(?,?,?,?, NOW())
-        `, [C]}
+        `, [CURRENT_BUYER_ID, CURRENT_SEOLLER_ID, bookID, message]}
 });
 
 module.exports = router;
