@@ -7,4 +7,6 @@ const db = mysql.createPool({
     database: 'textbook_marketplace'
 });
 
+const db = this.getConnection.promise();
+
 module.exports = db;
