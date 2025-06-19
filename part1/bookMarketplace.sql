@@ -14,6 +14,6 @@ CREATE TABLE Users (
     Name VARCHAR (100) NOT NULL,
     Email VARCHAR(100) NOT NULL,
     Password VARCHAR(255) NOT NULL,
-    LocationID FOREIGN KEY
+    LocationID INT NOT NULL, FOREIGN KEY
 
 )
