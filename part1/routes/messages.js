@@ -7,6 +7,8 @@ var CURRENT_SEOLLER_ID = 2;
 
 router.get('/items', async (req,res)=>{
     const[rows] = await db.query('
-        SELECT bl.
+        SELECT bl.BookID, bi.Title, u.Name AS SellerName
+        FROM BookListings bl
+        JOIN BookInfo bi ON bl.BookInfoID = bi.BookInfoIDJOI
         ');
 });
