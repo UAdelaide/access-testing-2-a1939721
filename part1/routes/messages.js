@@ -24,8 +24,9 @@ router.get('messages', async (req, res) => {
         JOIN Users u ON m.BuyerID = u.UserID
         WHERE m.SellerID = ?
         ORDER BY m.SentAt Desc
-        `, [CURRENT_BUYER_ID])
-})
+        `, [CURRENT_BUYER_ID]);
+        res.json(rows);
+});
 
 router.post('/messages', async (req,res) => {
     const { bookID, message } = req.body;
