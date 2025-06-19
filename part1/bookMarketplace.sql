@@ -37,7 +37,7 @@ CREATE TABLE BookListings (
 );
 
 CREATE TABLE Purchases (
-    PurcaseID INT AUTO_INCREMENT PRIMARY KEY,
+    PurcaseID INT AUTO_INCREMENaT PRIMARY KEY,
     BuyerID INT NOT NULL,
     BookID INT NOT NULL,
     PurchaseDate DATE NOT NULL,
