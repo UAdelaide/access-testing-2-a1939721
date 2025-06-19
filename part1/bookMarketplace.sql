@@ -1,6 +1,10 @@
+
+Create database
 DROP DATABASE IF EXISTS BookMarketplace;
 CREATE DATABASE BookMarketplace;
 USE BookMarketplace;
+
+
 
 CREATE TABLE Locations (
     LocationID INT AUTO_INCREMENT PRIMARY KEY,
