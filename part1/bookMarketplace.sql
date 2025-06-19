@@ -49,6 +49,10 @@ CREATE TABLE Purchases (
     FOREIGN Key (BookID) REFERENCES BookListings(BookID)
 );
 
---Create database--
+--Insert values--
+
+INSERT INTO Users (Name, Email, Password, LocationID)
+VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
+
 INSERT INTO Users (Name, Email, Password, LocationID)
 VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
