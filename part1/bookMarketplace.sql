@@ -60,4 +60,4 @@ INSERT INTO BookInfo (Title, Author, ISBN)
 VALUES ('Introduction to Algorithms', 'Thomas H. Cormen', '19780262033848');
 
 INSERT INTO BookListings (BookInfoID, SellerID, Price, Condition, ListingDate)
-VALUES (1, 1, 79.95 'SA', 'Australia');
+VALUES (1, 1, 79.95, 'Good', CURDATE());
