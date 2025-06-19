@@ -45,7 +45,8 @@
                 };
             },
             async mounted(){
-                const itemsRes = await fetch('/api/items')
+                const itemsRes = await fetch('/api/items');
+                this.items = await itemsRes.json()
             }
         })
 
