@@ -17,7 +17,9 @@ router.get('/items', async (req,res) => {
 
 router.get('messages', async (req, res) => {
     const [rows] = await db.query(`
-        SELECT m.MessageText, m.SentAt, bi.Title, u.Name AS BuyerName`)
+        SELECT m.MessageText, m.SentAt, bi.Title, u.Name AS BuyerName
+        FROM Messages m
+        JOIN BookListings bl ON m`)
 })
 
 router.post('/messages', async (req,res) => {
