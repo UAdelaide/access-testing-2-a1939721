@@ -30,7 +30,7 @@ CREATE TABLE BookListings (
     BookInfoID INT NOT NULL,
     SellerID INT NOT NULL,
     Price DECIMAL(8,2),
-    Condition VARCHAR (50) NOT NULL,
+    BookCondition VARCHAR (50) NOT NULL,
     ListingDate DATE NOT NULL,
     FOREIGN KEY (BookInfoID) REFERENCES BookInfo(BookInfoID),
     FOREIGN Key (SellerID) REFERENCES Users(UserID)
