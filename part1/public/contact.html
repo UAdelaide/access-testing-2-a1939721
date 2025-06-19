@@ -53,7 +53,7 @@
             },
             methods: {
                 async sendMessage() {
-                    if(!this.selectedBookID || !this.messageText.trim()){
+                    if(!this.selectedItem.bookID || !this.messageText.trim()){
                         return alert('Please select a book and enter a message.');
                     }
                     await fetch('/api/messages',{
