@@ -44,3 +44,6 @@ CREATE TABLE Purchases (
     FOREIGN KEY (BuyerID) REFERENCES Users(UserID),
     FOREIGN Key (BookID) REFERENCES BookListings(BookID)
 );
+
+
+INSERT INTO Users ()
