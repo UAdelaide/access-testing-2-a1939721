@@ -5,4 +5,7 @@ var db = require('../db');
 var CURRENT_BUYER_ID = 1;
 var CURRENT_SEOLLER_ID = 2;
 
-router.get('\items',)
+router.get('/items', async (req,res)=>{
+    
+}
+);
