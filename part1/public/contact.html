@@ -44,7 +44,9 @@
                     messages: []
                 };
             },
-            async mounted()
+            async mounted(){
+                const itemsRes = await fetch('/api/items')
+            }
         })
 
 </body>
