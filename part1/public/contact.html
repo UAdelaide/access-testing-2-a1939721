@@ -52,7 +52,9 @@
                 this.messages = await messagesRes.json();
             },
             methods: {
-                async sendMessage()
+                async sendMessage() {
+                    if(!this.selectedBookID || !this.messageText.trim())
+                }
             }
         })
 
