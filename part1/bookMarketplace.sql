@@ -50,9 +50,14 @@ CREATE TABLE Purchases (
 );
 
 --Insert values--
-
 INSERT INTO Locations (City, State, Country)
 VALUES ('Adelaide', 'SA', 'Australia');
 
 INSERT INTO Users (Name, Email, Password, LocationID)
 VALUES ('Alice Johnson', 'alice@example.com', 'hashedpassword123', 1);
+
+INSERT INTO BookInfo (Title, State, Country)
+VALUES ('Adelaide', 'SA', 'Australia');
+
+INSERT INTO Locations (City, State, Country)
+VALUES ('Adelaide', 'SA', 'Australia');
